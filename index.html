@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>DOM Basics</title>
+	<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+	<style type="text/css">
+		.item img{
+			float: left;
+		}
+		.item-content{
+			float: left;
+			padding-left: 1em;
+		}
+		#template{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<div>
+			<label>Фамилия</label>
+			<input id="surname" type="text" placeholder="Сидоров"/>
+		</div>
+		<div>
+			<label>Имя</label>
+			<input id="name" type="text" placeholder="Иван"/>
+		</div>
+		<div>
+			<label>Фото</label>
+			<input id="image" type="text" placeholder="http://example.com/ava.gif"/>
+		</div>
+		<div>
+			<button type="button" onclick="addPerson()">Добавить</button>
+		</div>
+	</form>
+	
+	
+	<ul id="test"></ul>
+
+	<div id="template">
+		<div class="item">
+			<img src="" alt="ava" width="100" height="100"/>
+			<div class="item-content">
+				<p class="surname">Surname</p>
+				<p class="name">Name</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+	<script src="script.js"></script>
+</html>
